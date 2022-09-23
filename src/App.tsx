@@ -11,7 +11,6 @@ function App() {
       id: nanoid(),
     },
   ]);
-
   return (
     <div className="container">
       <NoteList notes={notes} />
