@@ -1,3 +1,4 @@
+import { AddNote } from "./AddNote";
 import { Note } from "./Note";
 
 export function NoteList(props: {
@@ -8,6 +9,7 @@ export function NoteList(props: {
       {props.notes.map((note) => (
         <Note id={note.id} text={note.text} date={note.date} />
       ))}
+      <AddNote />
     </div>
   );
 }
